@@ -44,7 +44,7 @@ file_path = "data.md"  # Update this if the path is different
 delhi_housing_data = parse_markdown(file_path)
 
 # Set up LangChain prompt
-llm = ChatOpenAI(temperature=0.7,openai_api_key='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')
+llm = ChatOpenAI(temperature=0.7,openai_api_key='your_api-key')
 prompt_template = PromptTemplate.from_template(
     "You are a helpful assistant that provides district and taluka information for villages in Delhi. Answer based on the provided dataset: {query}"
 )
